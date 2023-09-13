@@ -1,0 +1,8 @@
+version: "3"
+services:
+  postfix:
+    image: catatnight/postfix
+    environment:
+      - MAIL_DOMAIN=example.com
+      - MYHOSTNAME=myhost
+      - SMTPUSER=username:password
